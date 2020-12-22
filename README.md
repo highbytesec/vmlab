@@ -16,14 +16,17 @@ openbsd vmm hypervisor support
 
 postgresql rdbms support
 
-## setup
+## architectural requirements
 
+if you want to use vmlab on a single machine such as a laptop, everything 
 
+- one or more network storage servers
+- one or more compute servers
+- a mysql database server
+- an nginx webserver running vmapi
 
-### dependencies
+### vmlab client dependencies
 - ruby >= 2.6.6
-- qemu-kvm
-- openvswitch
 - tiger vncviewer (or another vncviewer supporting x509/TLS)
 - ssh
 - git
@@ -32,10 +35,19 @@ postgresql rdbms support
 - openssl
 - bash
 
-##### mandatory
-- one or more network storage servers
-- one or mor compute servers (aka hosts) with qemu-kvm installed
-- a mysql database server
-##### optional
-- a webserver to expose the rest api
-- 
+### compute server dependencies
+- linux kernel with kvm support or modules
+- openvswitch
+- qemu-kvm
+- ssh
+- ability to mount your shared network storage
+
+### storage server dependencies
+- ability to export some kind of shared network storage
+
+### database server dependencies
+- mysql database server
+
+### web server dependencies
+- nginx
+- vmapi (this is vmlab's backend web application stack implementing a cloud management rest api)
