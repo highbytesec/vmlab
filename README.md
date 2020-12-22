@@ -21,7 +21,6 @@ postgresql rdbms support
 
 
 ### dependencies
-- linux x86_64 or x86 kernel and kvm modules
 - ruby >= 2.6.6
 - qemu-kvm
 - openvswitch
