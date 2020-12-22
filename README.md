@@ -21,8 +21,11 @@ postgresql rdbms support
 
 
 ### dependencies
+- linux x86_64 or x86 kernel and kvm modules
 - ruby >= 2.6.6
-- vncviewer
+- qemu-kvm
+- openvswitch
+- tiger vncviewer (or another vncviewer supporting x509/TLS)
 - ssh
 - git
 - pass
