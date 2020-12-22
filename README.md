@@ -12,12 +12,22 @@ freebsd bhyve hypervisor support
 
 openbsd vmm hypervisor support
 
-postgres rdbms support
+postgresql rdbms support
 
 ## setup
-### distributed cluster
 
-#### pre-requisite configuration
+
+
+### dependencies
+ruby >= 2.6.6
+vncviewer
+ssh
+git
+pass
+gnupg
+openssl
+bash
+
 ##### mandatory
 - one or more network storage servers
 - one or mor compute servers (aka hosts) with qemu-kvm installed
