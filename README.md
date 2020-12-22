@@ -19,6 +19,7 @@ postgresql rdbms support
 ## architectural requirements
 
 ### single-host deployment
+- all dependencies outlined below should be installed locally
 - all services should be configured to listen on the loopback ip address
 - your shared network storage mountpoint should just be a directory with some filesystem space available
 
