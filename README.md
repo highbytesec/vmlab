@@ -18,8 +18,11 @@ postgresql rdbms support
 
 ## architectural requirements
 
-if you want to use vmlab on a single machine such as a laptop, everything 
+### single-host deployment
+- all services should be configured to listen on the loopback ip address
+- your shared network storage mountpoint should just be a directory with some filesystem space available
 
+### distributed deployment
 - one or more network storage servers
 - one or more compute servers
 - a mysql database server
