@@ -19,14 +19,14 @@ postgresql rdbms support
 
 
 ### dependencies
--ruby >= 2.6.6
--vncviewer
--ssh
--git
--pass
--gnupg
--openssl
--bash
+- ruby >= 2.6.6
+- vncviewer
+- ssh
+- git
+- pass
+- gnupg
+- openssl
+- bash
 
 ##### mandatory
 - one or more network storage servers
