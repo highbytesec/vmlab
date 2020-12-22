@@ -2,6 +2,7 @@
 
 ## overview
 vmlab is a command-line console interface for managing virtual machines.
+
 it can be deployed as a distributed cluster or you can run it on a single machine such as a laptop.
 
 ## setup
