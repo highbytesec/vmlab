@@ -32,26 +32,30 @@ postgresql rdbms support
 ### vmlab client dependencies
 - ruby >= 2.6.6
 - tiger vncviewer (or another vncviewer supporting x509/TLS)
-- ssh
-- git
-- pass
+- openssh
 - gnupg
+- pwgen
+- pass
 - openssl
 - bash
+- gnupg
 
 ### compute server dependencies
 - linux kernel with kvm support or modules
 - openvswitch
 - qemu-kvm
-- ssh
+- openssh server
 - ability to mount your shared network storage
 
 ### storage server dependencies
 - ability to export some kind of shared network storage
+- openssh server
 
 ### database server dependencies
 - mysql database server
+- openssh server
 
 ### web server dependencies
 - nginx
 - vmapi (this is vmlab's backend web application stack implementing a cloud management rest api)
+- openssh server
